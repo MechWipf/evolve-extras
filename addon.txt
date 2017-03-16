@@ -1,0 +1,7 @@
+"AddonInfo"
+{
+	"name"			"Evolve Extras"
+	"version"		"1.0.1" // major, minor, gmversion
+	"author_name"	"MechWipf"
+	"info"			"Extensions for the easy to use adminmod evolve"
+}
