@@ -12,16 +12,16 @@ local function PlayerChat( name, rank, txt )
 	if ( table.Count( evolve.ranks ) > 0 and GAMEMODE.IsSandboxDerived ) then
 		local tab = {}
 
-    table.insert( tab, Color(55, 153, 255) )
-    table.insert( tab, "(DISCORD) " )
+	table.insert( tab, Color(55, 153, 255) )
+	table.insert( tab, "(DISCORD) " )
 
 		if ( LocalPlayer():EV_HasPrivilege( "See chat tags" ) and rank != "guest" ) then
 			table.insert( tab, color_white )
 			table.insert( tab, "(" .. evolve.ranks[ rank ].Title .. ") " )
 		end
 
-    table.insert( tab, evolve.ranks[ rank ].Color )
-    table.insert( tab, name )
+	table.insert( tab, evolve.ranks[ rank ].Color )
+	table.insert( tab, name )
 
 		table.insert( tab, Color( 255, 255, 255 ) )
 		table.insert( tab, ": " .. txt )
